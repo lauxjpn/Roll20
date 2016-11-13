@@ -1,0 +1,24 @@
+# WC-Fähigkeit
+@{selected|token_name} würfelt für eine Wild Card-Fähigkeit
+/r {1d?{Fähigkeitswert|6}! [Fähigkeit]@{selected|WildDie} [Wild Die]}k1 - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# WC-Ungeübt
+@{selected|token_name} steht mit dem Rücken zur Wand
+/r {1d4! [Fähigkeit]@{selected|WildDie} [Wild Die]}k1 - 2 [Ungeübt] - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Explodieren
+@{selected|token_name} lässt die Würfel explodieren
+/r ?{Anzahl Würfel|1}d?{Würfeltyp (4/6/8/10/12)|6}!+(?{Modifikator|0})
+
+# Normal
+@{selected|token_name} würfelt ganz normal
+/r ?{Anzahl Würfel|1}d?{Würfeltyp (4/6/8/10/12)|6}+(?{Modifikator|0})
+
+# Speziell
+@{selected|token_name} würfelt völlig abgefahren
+/r ?{Vollständige Formel|1d4!-2}
+
+# Internal-Fähigkeit
+/r {1d@{selected|Verstand}! [Verstand]@{selected|WildDie} [Wild Die]}k1 - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+/r {1d@{selected|?{Fähigkeit}}! [Verstand]@{selected|WildDie} [Wild Die]}k1 - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
