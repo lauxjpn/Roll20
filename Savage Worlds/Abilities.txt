@@ -75,7 +75,7 @@ Ein Erfolg heilt eine Wunde, eine Steigerung zwei. Weitere Steigerungen haben ke
 
 # Schlösser knacken
 @{selected|token_name} gibt den Feinmechaniker
-/r {1d@{Schlösser knacken}! [Schlösser knacken]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+/r {1d@{Schlösser-knacken}! [Schlösser knacken]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
 
 # Schwimmen
 @{selected|token_name} gibt dem Pferd die Sporen
@@ -102,7 +102,9 @@ Ein Erfolg heilt eine Wunde, eine Steigerung zwei. Weitere Steigerungen haben ke
 /r {1d@{Umhören}! [Umhören]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (@{Charisma}) [Charisma] + (?{Modifikator|0}) [Modifikator]
 
 # Wahrnehmung
-@{selected|token_name} sieht sich genau um
+/em sieht sich genau um
+/r {1d@{Wahrnehmung}!+[[{{@{Wahrnehmung|max}+0,-1}>1} * (@{Wahrnehmung|max}+0)]]@{WildDie} [Wild Die]}k1 + ([[{{@{Wahrnehmung|max}+0,-1}>0} * (0 - (@{Wahrnehmung|max}+0)) + (@{Wahrnehmung|max}+0)]]) - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
 /r {1d@{Wahrnehmung}! [Wahrnehmung]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
 
 # Werfen*
@@ -115,47 +117,32 @@ Ein Erfolg heilt eine Wunde, eine Steigerung zwei. Weitere Steigerungen haben ke
 
 # Sprinten
 @{selected|token_name} nimmt die Füße in die Hand
-/r @{Bewegungsweite} [Bewegungsweite] - @{Wunden} [Wunden] + (@{Sprint-Würfel}) [Sprinten]
+/r @{Bewegungsweite} [Bewegungsweite] - @{Wunden} [Wunden] + @{Sprint-Würfel} [Sprinten]
 
-@{selected|token_name} TODO
-/r @{Waffe-NK1-Schaden}! [Schaden] + (?{Steigerung (Angriff)|Nein,0 [Steigerung]|Ja,1d6! [Steigerung]}) - (?{Angesagtes Ziel/Panzerung|Torso (Standard),[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf,[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Kopf}&#125; * (0 - (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})]]|Arme,[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Arme}&#125; * (0 - (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})]]|Beine,[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Beine}&#125; * (0 - (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})]]|Speziell,?{Panzerung&#124;0&#125;}) [Panzerung + Angesagtes Ziel] - @{Robustheit} [Robustheit] + (?{Modifikator|0}) [Modifikator]
+# Schaden-NK-Waffe1*
+@{selected|token_name} macht Kleinholz aus @{target|token_name}
+/r @{NK-Waffe1-Schaden} [Schaden] + (?{Steigerung (Angriff)|Nein,0 [Steigerung]|Ja,1d6! [Steigerung]}) - (?{Angesagtes Ziel/Panzerung|Torso (Standard),[[{{@{NK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{NK-Waffe1-PB})) + (@{target|Panzerung-Torso} - @{NK-Waffe1-PB})]]|Kopf,[[{{@{NK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Kopf}&#125; * (0 - (@{target|Panzerung-Kopf} - @{NK-Waffe1-PB})) + (@{target|Panzerung-Kopf} - @{NK-Waffe1-PB})]]|Arme,[[{{@{NK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Arme}&#125; * (0 - (@{target|Panzerung-Arme} - @{NK-Waffe1-PB})) + (@{target|Panzerung-Arme} - @{NK-Waffe1-PB})]]|Beine,[[{{@{NK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Beine}&#125; * (0 - (@{target|Panzerung-Beine} - @{NK-Waffe1-PB})) + (@{target|Panzerung-Beine} - @{NK-Waffe1-PB})]]|Speziell,?{Panzerung&#124;0&#125;}) [Panzerung + Angesagtes Ziel] - @{Robustheit} [Robustheit] + (?{Modifikator|0}) [Modifikator]
+über @{target|token_name}'s Robustheit
+0 ist angeschlagen (wenn bereits angeschlagen dann eine Wunde), jeweils 4 ist eine Wunde
 
-
-?{Angesagtes Ziel|Torso (Standard), @{target|Panzerung-Torso}|Kopf, @{target|Panzerung-Kopf}|Arme, @{target|Panzerung-Arme}|Beine, @{target|Panzerung-Beine}|Speziell, (?(Panzerung|0))}
-
-[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Torso}} * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]
-[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Kopf}} * (0 - (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})]]
-[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Arme}} * (0 - (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})]]
-[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Beine}} * (0 - (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})]]
-
-[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]
-[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Kopf}&#125; * (0 - (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})]]
-[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Arme}&#125; * (0 - (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})]]
-[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Beine}&#125; * (0 - (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})]]
-
-/r ?{Trefferzone|Torso (Standard), @{target|Panzerung-Torso}|Kopf, @{target|Panzerung-Kopf}|Arme, @{target|Panzerung-Arme}|Beine, @{target|Panzerung-Beine}}
-[[{{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)]]
-[[{{1,-1}>3}*(0-(3-1)) + (3-1)]]
-
-/r {{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)
-
-/roll ?{Trefferzone|Torso, @{target|Panzerung}}
-
-/r ?{Trefferzone|Torso (Standard), [[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf, 0}
-
-Torso (Standard), [[{{1&#44;-1&#125;>3&#125; * (0 - (3 - 1)) + (3 - 1)]]
-
-/r ?{Trefferzone|Torso (Standard), [[{{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)]]}
-
-/r ?{Trefferzone|Torso (Standard), [[{{@{Waffe-NK1-PB},-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf, 0}
+# Schaden-FK-Waffe1*
+@{selected|token_name} durchlöchert @{target|token_name}
+/r @{FK-Waffe1-Schaden} [Schaden] + (?{Steigerung (Angriff)|Nein,0 [Steigerung]|Ja,1d6! [Steigerung]}) - (?{Angesagtes Ziel/Panzerung|Torso (Standard),[[{{@{FK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{FK-Waffe1-PB})) + (@{target|Panzerung-Torso} - @{FK-Waffe1-PB})]]|Kopf,[[{{@{FK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Kopf}&#125; * (0 - (@{target|Panzerung-Kopf} - @{FK-Waffe1-PB})) + (@{target|Panzerung-Kopf} - @{FK-Waffe1-PB})]]|Arme,[[{{@{FK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Arme}&#125; * (0 - (@{target|Panzerung-Arme} - @{FK-Waffe1-PB})) + (@{target|Panzerung-Arme} - @{FK-Waffe1-PB})]]|Beine,[[{{@{FK-Waffe1-PB}&#44;-1&#125;>@{target|Panzerung-Beine}&#125; * (0 - (@{target|Panzerung-Beine} - @{FK-Waffe1-PB})) + (@{target|Panzerung-Beine} - @{FK-Waffe1-PB})]]|Speziell,?{Panzerung&#124;0&#125;}) [Panzerung + Angesagtes Ziel] - @{Robustheit} [Robustheit] + (?{Modifikator|0}) [Modifikator]
+über @{target|token_name}'s Robustheit
+0 ist angeschlagen (wenn bereits angeschlagen dann eine Wunde), jeweils 4 ist eine Wunde
 
 
-/r ?{Trefferzone|Torso (Standard), [[{{1,-1&#125;>3&#125; * (0 - (3 - 1)) + (3 - 1)]]|Kopf, 0}
 
-/r ?{Trefferzone|Torso (Standard), [[{1d6!&#44; 1d6!&#125;k1]]|Kopf, 0}
+##
+##
+##
 
-{1d6!, 1d6!}k1
 
-/r ?{Trefferzone|Torso (Standard), [[{{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)]]|Kopf, 0}
+[[{{@{Wahrnehmung|max}+0,-1}>1} * (@{Wahrnehmung|max}+0)]]
+[[{{@{Wahrnehmung|max}+0,-1}>0} * (0 - (@{Wahrnehmung|max}+0)) + (@{Wahrnehmung|max}+0)]]
+[[{{x,something-less-than-A}>A}*(T-F) + F]]
 
-/r ?{Trefferzone|Torso (Standard), [[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf, 0}
+
+##
+##
+##
