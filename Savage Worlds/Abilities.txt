@@ -1,0 +1,161 @@
+# Geschicklichkeit
+@{selected|token_name} bewegt sich flink wie eine Katze
+/r {1d@{Geschicklichkeit}! [Geschicklichkeit]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Konstitution
+@{selected|token_name} demonstriert wie hart man sein kann
+/r {1d@{Konstitution}! [Konstitution]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Stärke
+@{selected|token_name} lässt die Muskeln spielen
+/r {1d@{Stärke}! [Stärke]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Verstand
+@{selected|token_name} strengt die grauen Zellen an
+/r {1d@{Verstand}! [Verstand]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Willenskraft
+@{selected|token_name} zeigt innere Stärke
+/r {1d@{Willenskraft}! [Willenskraft]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Einschüchtern
+@{selected|token_name} fletscht die Zähne
+/r {1d@{Einschüchtern}! [Einschüchtern]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Fahren
+@{selected|token_name} gibt Gummi
+/r {1d@{Fahren}! [Fahren]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Glücksspiel
+@{selected|token_name} fordert Fortuna heraus
+/r {1d@{Glücksspiel}! [Glücksspiel]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Heilen*
+@{selected|token_name} verarztet @{target|token_name}
+/r {1d@{Heilen}! [Heilen]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator] - @{target|Wunden} [Patientenwunden]
+Ein Erfolg heilt eine Wunde, eine Steigerung zwei. Weitere Steigerungen haben keine Auswirkung.
+
+# Heimlichkeit
+@{selected|token_name} schleicht durch die Schatten
+/r {1d@{Heimlichkeit}! [Heimlichkeit]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Kämpfen*
+@{selected|token_name} greift @{target|token_name} im Nahkampf an
+/r {1d@{Kämpfen}! [Kämpfen]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator] - @{target|Parade} [Parade]
+0 ist ein Erfolg, 4 ist eine Steigerung
+
+# Klettern
+@{selected|token_name} gewinnt an Höhe
+/r {1d@{Klettern}! [Klettern]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Luftfahrt
+@{selected|token_name} lässt die Triebwerke aufheulen
+/r {1d@{Luftfahrt}! [Luftfahrt]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Nachforschung
+@{selected|token_name} vertieft sich in die Materie
+/r {1d@{Nachforschung}! [Nachforschung]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Provozieren
+@{selected|token_name} lässt den Gegner rot sehen
+/r {1d@{Provozieren}! [Provozieren]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Reiten
+@{selected|token_name} gibt dem Pferd die Sporen
+/r {1d@{Reiten}! [Reiten]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Reparieren
+@{selected|token_name} ist am tüfteln
+/r {1d@{Reparieren}! [Reparieren]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Schießen*
+@{selected|token_name} schießt auf @{target|token_name}
+/r {1d@{Schießen}! [Schießen]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] - ?{Entfernung|Kurz, 0|Mittel, 2|Lang, 4} [Entfernung] + (?{Modifikator|0}) [Modifikator]
+4 ist ein Erfolg, 8 ist eine Steigerung
+
+# Schlösser knacken
+@{selected|token_name} gibt den Feinmechaniker
+/r {1d@{Schlösser knacken}! [Schlösser knacken]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Schwimmen
+@{selected|token_name} gibt dem Pferd die Sporen
+/r {1d@{Schwimmen}! [Schwimmen]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Seefahrt
+@{selected|token_name} gibt dem Pferd die Sporen
+/r {1d@{Seefahrt}! [Seefahrt]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Spuren lesen
+@{selected|token_name} folgt der Fährte
+/r {1d@{Spuren lesen}! [Spuren lesen]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Überleben
+@{selected|token_name} wird eins mit der Natur
+/r {1d@{Überleben}! [Überleben]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Überreden
+@{selected|token_name} redet sich um Kopf und Kragen
+/r {1d@{Überreden}! [Überreden]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (@{Charisma}) [Charisma] + (?{Modifikator|0}) [Modifikator]
+
+# Umhören
+@{selected|token_name} fragt sich durch die Nachbarschaft
+/r {1d@{Umhören}! [Umhören]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (@{Charisma}) [Charisma] + (?{Modifikator|0}) [Modifikator]
+
+# Wahrnehmung
+@{selected|token_name} sieht sich genau um
+/r {1d@{Wahrnehmung}! [Wahrnehmung]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Werfen*
+@{selected|token_name} holt weit aus um @{target|token_name} zu treffen
+/r {1d@{Werfen}! [Werfen]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] - abs(@{Belastungsabzug}) [Belastungsabzug] + (?{Modifikator|0}) [Modifikator]
+
+# Wissen-Spezifisch
+@{selected|token_name} weiß einfach alles über spezifisch
+/r {1d@{Wissen-Spezifisch}! [Wissen-Spezifisch]@{WildDie} [Wild Die]}k1 - @{Wunden} [Wunden] - @{Erschöpfung} [Erschöpfung] + (?{Modifikator|0}) [Modifikator]
+
+# Sprinten
+@{selected|token_name} nimmt die Füße in die Hand
+/r @{Bewegungsweite} [Bewegungsweite] - @{Wunden} [Wunden] + (@{Sprint-Würfel}) [Sprinten]
+
+@{selected|token_name} TODO
+/r @{Waffe-NK1-Schaden}! [Schaden] + (?{Steigerung (Angriff)|Nein,0 [Steigerung]|Ja,1d6! [Steigerung]}) - (?{Angesagtes Ziel/Panzerung|Torso (Standard),[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf,[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Kopf}&#125; * (0 - (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})]]|Arme,[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Arme}&#125; * (0 - (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})]]|Beine,[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Beine}&#125; * (0 - (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})]]|Speziell,?{Panzerung&#124;0&#125;}) [Panzerung + Angesagtes Ziel] - @{Robustheit} [Robustheit] + (?{Modifikator|0}) [Modifikator]
+
+
+?{Angesagtes Ziel|Torso (Standard), @{target|Panzerung-Torso}|Kopf, @{target|Panzerung-Kopf}|Arme, @{target|Panzerung-Arme}|Beine, @{target|Panzerung-Beine}|Speziell, (?(Panzerung|0))}
+
+[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Torso}} * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]
+[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Kopf}} * (0 - (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})]]
+[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Arme}} * (0 - (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})]]
+[[{{@{Waffe-NK1-PB},-1}>@{target|Panzerung-Beine}} * (0 - (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})]]
+
+[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]
+[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Kopf}&#125; * (0 - (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Kopf} - @{Waffe-NK1-PB})]]
+[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Arme}&#125; * (0 - (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Arme} - @{Waffe-NK1-PB})]]
+[[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Beine}&#125; * (0 - (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Beine} - @{Waffe-NK1-PB})]]
+
+/r ?{Trefferzone|Torso (Standard), @{target|Panzerung-Torso}|Kopf, @{target|Panzerung-Kopf}|Arme, @{target|Panzerung-Arme}|Beine, @{target|Panzerung-Beine}}
+[[{{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)]]
+[[{{1,-1}>3}*(0-(3-1)) + (3-1)]]
+
+/r {{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)
+
+/roll ?{Trefferzone|Torso, @{target|Panzerung}}
+
+/r ?{Trefferzone|Torso (Standard), [[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf, 0}
+
+Torso (Standard), [[{{1&#44;-1&#125;>3&#125; * (0 - (3 - 1)) + (3 - 1)]]
+
+/r ?{Trefferzone|Torso (Standard), [[{{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)]]}
+
+/r ?{Trefferzone|Torso (Standard), [[{{@{Waffe-NK1-PB},-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf, 0}
+
+
+/r ?{Trefferzone|Torso (Standard), [[{{1,-1&#125;>3&#125; * (0 - (3 - 1)) + (3 - 1)]]|Kopf, 0}
+
+/r ?{Trefferzone|Torso (Standard), [[{1d6!&#44; 1d6!&#125;k1]]|Kopf, 0}
+
+{1d6!, 1d6!}k1
+
+/r ?{Trefferzone|Torso (Standard), [[{{1,-1}>3} * (0 - (3 - 1)) + (3 - 1)]]|Kopf, 0}
+
+/r ?{Trefferzone|Torso (Standard), [[{{@{Waffe-NK1-PB}&#44;-1&#125;>@{target|Panzerung-Torso}&#125; * (0 - (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})) + (@{target|Panzerung-Torso} - @{Waffe-NK1-PB})]]|Kopf, 0}
