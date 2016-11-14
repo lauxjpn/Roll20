@@ -1,0 +1,56 @@
+/em feuert vollautomatisch auf @{target|token_name}
+
+?{Feuerrate
+|2,
+Wähle 2 beliebige Ergebnisse aus.
+&#10;
+1. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+2. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+Wild Die: [[@{selected|WildDieRaw} [Wild Die] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+4 ist ein Erfolg&#44; 8 ist eine Steigerung
+|3,
+Wähle 3 beliebige Ergebnisse aus.
+&#10;
+1. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+2. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+3. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+Wild Die: [[@{selected|WildDieRaw} [Wild Die] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+4 ist ein Erfolg&#44; 8 ist eine Steigerung
+|4,
+Wähle 4 beliebige Ergebnisse aus.
+&#10;
+1. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+2. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+3. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+4. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+Wild Die: [[@{selected|WildDieRaw} [Wild Die] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+4 ist ein Erfolg&#44; 8 ist eine Steigerung
+|5,
+Wähle 5 beliebige Ergebnisse aus.
+&#10;
+1. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+2. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+3. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+4. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+5. Würfel: [[d@{selected|Schießen}! [Schießen] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+Wild Die: [[@{selected|WildDieRaw} [Wild Die] + ([[@{selected|Schießen|max}+0]]) - @{selected|Wunden} [Wunden] - @{selected|Erschöpfung} [Erschöpfung] - abs(@{selected|Belastungsabzug}) [Belastungsabzug] - ?{Entfernung&#124;Kurz&#44; 0&#124;Mittel&#44; 2&#124;Lang&#44; 4&#125; [Entfernung] + (?{Modifikator&#124;0&#125;) [Modifikator]]]
+&#10;
+4 ist ein Erfolg&#44; 8 ist eine Steigerung
+}
