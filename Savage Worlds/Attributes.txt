@@ -1,0 +1,6 @@
+@{Bewegungsweite} = [[(6+(@{BewegungsweiteMod}))]]
+@{Parade} = [[(2+floor((({0,floor(1-abs(@{Kämpfen}-4))}dl1)*(({{@{Kämpfen|max}+0,-1}>0}*((@{Kämpfen}+(@{Kämpfen|max}+0))-0) + 0)-(@{Kämpfen}+(@{Kämpfen|max}+0))) + (@{Kämpfen}+(@{Kämpfen|max}+0)))/2)+(@{ParadeMod})+(@{ParadeModTemp}+0))]]
+@{Robustheit} = [[(2+@{Konstitution}/2+(@{RobustheitMod}))]]
+@{Charisma} = [[(0+(@{CharismaMod}))]]
+@{WildDie} =  ,@{WildDieRaw} [Wild Die]
+@{WildDieRaw} = 1d6!
